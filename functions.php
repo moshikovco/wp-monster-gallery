@@ -32,5 +32,5 @@ function monsterGallery() {
     );
   }
   add_action( 'enqueue_block_editor_assets', 'monsterGallery' );
-
+  
 ?>

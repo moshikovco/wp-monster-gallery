@@ -1,0 +1,7 @@
+.wp-block-gallery.monster-slider .flickity-viewport {
+    width: 100%;
+}
+.wp-block-gallery.monster-slider li {
+    width: 100%;
+    height: 400px;
+}

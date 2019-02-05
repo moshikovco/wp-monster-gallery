@@ -11,18 +11,17 @@ License: GPL3
 */
 
     // Flickity library (https://flickity.metafizzy.co/)
-    wp_enqueue_script( 'mscript_flickity', 'https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js');
-    wp_enqueue_script( 'mscript_flickitylazy', 'https://unpkg.com/flickity-bg-lazyload@1/bg-lazyload.js');
-    wp_enqueue_style('mstyle_flickity', 'https://unpkg.com/flickity@2/dist/flickity.min.css');
+    wp_enqueue_script( 'mscript_flickity', plugins_url( 'assets/js/flickity.pkgd.min.js', __FILE__ ) );
+    wp_enqueue_script( 'mscript_flickitylazy', plugins_url( 'assets/js/bg-lazyload.js', __FILE__ ) );
+    wp_enqueue_style( 'mstyle_flickity', plugins_url( 'assets/css/flickity.min.css', __FILE__ ) );
 
     // Fancybox library (https://fancyapps.com/fancybox/3/)
-    wp_enqueue_script( 'mscript_fancybox', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.js');
-    wp_enqueue_style('mstyle_fancybox', 'https://cdn.jsdelivr.net/gh/fancyapps/fancybox@3.5.6/dist/jquery.fancybox.min.css');
+    wp_enqueue_script( 'mscript_fancybox', plugins_url( 'assets/js/jquery.fancybox.min.js', __FILE__ ) );
+    wp_enqueue_style( 'mstyle_fancybox', plugins_url( 'assets/css/jquery.fancybox.min.css', __FILE__ ) );
 
     // Plugin elements
-    wp_enqueue_script( 'mscript_scripts', plugins_url( 'assets/js/script.js', __FILE__ ));
-    wp_enqueue_style( 'mscript_style', plugins_url( 'assets/css/style.css', __FILE__ ));
-
+    wp_enqueue_script( 'mscript_scripts', plugins_url( 'assets/js/script.js', __FILE__ ) );
+    wp_enqueue_style( 'mscript_style', plugins_url( 'assets/css/style.css', __FILE__ ) );
 
 
 function monsterGallery() {
